@@ -1,0 +1,19 @@
+{:paths ["src" "resources"]
+ :deps {com.datomic/ion {:mvn/version "0.9.34"}
+        org.clojure/data.json {:mvn/version "0.2.6"}
+        org.clojure/spec.alpha {:mvn/version "0.2.176"}
+        org.clojure/core.async {:mvn/version "0.4.490"}
+        org.clojure/clojure {:mvn/version "1.10.0"}
+        org.clojure/data.fressian {:mvn/version "0.2.1"}
+        org.clojure/data.generators {:mvn/version "0.1.2"}
+        org.clojure/math.combinatorics {:mvn/version "0.1.5"}
+        org.clojure/test.check {:mvn/version "0.9.0"}
+        org.clojure/data.csv {:mvn/version "0.1.4"}
+        com.cognitect/anomalies {:mvn/version "0.1.12"}
+        }
+ :mvn/repos {"datomic-cloud" {:url "s3://datomic-releases-1fc2183a/maven/releases"}}
+ :aliases
+ {:dev {:extra-deps {com.datomic/client-cloud {:mvn/version "0.8.78"}
+                     com.datomic/ion-dev {:mvn/version "0.9.229"}}}
+  :rebl {:extra-deps {com.cognitect/rebl {:local/root "/Users/jbin/Desktop/Jaret/Tools/releasetest/tomhanks/rebldownload/218/REBL-0.9.218.jar"}}
+         :main-opts  ["-m" "cognitect.rebl"]}}}
